@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  /* Branding Colors */
+  --color-background: #ffffff;
+  --color-foreground: #0f172a; /* A slightly softer dark blue-black */
+  
+  /* Semantic Colors for a clean light UI */
+  --color-card: #f8fafc;
+  --color-border: #e2e8f0;
+  --color-primary: #0067ff;
+  --color-primary-hover: #0056d3;
+  
+  /* Fonts */
+  --font-sans: "Inter", ui-sans-serif, system-ui;
+}
+
+:root {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
+body {
+  /* Using antialiasing for cleaner text on light backgrounds */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  /* Standardizing the font stack */
+  font-family: var(--font-sans);
+}
